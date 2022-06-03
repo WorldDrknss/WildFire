@@ -455,5 +455,6 @@ $RECYCLE.BIN/
 
 appsettings.json
 *.db
+*db-*
 .idea/*
 ssl
