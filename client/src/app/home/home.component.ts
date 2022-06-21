@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  registerMode = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  registerToggle(){
+    this.registerMode = !this.registerMode;
+  }
+
+  cancelRegisterMode(e: boolean){
+    this.registerMode = e;
   }
 
 }
